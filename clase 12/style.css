@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    margin: 2rem;
+}
+
+.container-hover {
+    background-color: cornflowerblue;
+    padding: 10rem;
+    margin: 20px 0;
+    align-items: center;
+    text-align: center;
+}
+
+.container-hover .rectangulo {
+    padding: 100px;
+    background-color: salmon;
+}
+
+.rectangulo:hover {
+    background-color: blueviolet;
+    transition: 3s;
+}
+
+.container-twitch {
+    background-color: cornsilk;
+    padding: 10rem;
+    margin: 20px 0;
+    align-items: center;
+    text-align: center;
+}
+
+.twitch:link {
+    color: red;
+    font-size: 3rem;
+}
+
+.twitch:visited {
+    color: rgb(0, 255, 60);
+}
+
+.twitch:active {
+    background-color: blue;
+    color: coral;
+}
+
+.twitch:hover {
+    background-color: cadetblue;
+}
+
+.container-focus {
+    background-color: rgb(0, 0, 0);
+    padding: 10rem;
+    margin: 20px 0;
+    align-items: center;
+    text-align: center;
+}
+
+.container-focus h2 {
+    color: rgb(0, 255, 34);
+}
+
+.input-red:focus {
+    background: salmon;
+    outline: none;
+    border: salmon;
+    color: white;
+    padding: 10px 15px;
+}
+
+.input-blue:focus {
+    background: rgb(116, 114, 250);
+    outline: none;
+    border: rgb(116, 114, 250);
+    color: white;
+    padding: 10px 15px;
+}
+
+.container-first {
+    background-color: salmon;
+    padding: 10rem;
+    margin: 20px 0;
+    align-items: center;
+    text-align: center;
+}
+
+.primerito p:first-child {
+    color: lime;
+    background-color: black;
+    padding: 5px;
+}
+
+.primerito a:first-of-type {
+    background-color: cornflowerblue;
+    color: white;
+    padding: 5px;
+    margin: 10px;
+}
+
+.container-last {
+    background-color: salmon;
+    padding: 10rem;
+    margin: 20px 0;
+    align-items: center;
+    text-align: center;
+}
+
+.ultimo p:last-child {
+    background-color: cornflowerblue;
+    color: white;
+    padding: 5px;
+}
+
+.container-nth {
+    background-color:  cornflowerblue;
+    padding: 10rem;
+    margin: 20px 0;
+    align-items: center;
+    text-align: center;
+}
+
+.container-nth h3{
+    margin: 10px;
+    font-weight: 4rem;
+}
+
+.inpar p:nth-child(odd) {
+    background-color: salmon;
+    color: whitesmoke;
+    padding: 5px;
+}
+
+.par p:nth-child(even) {
+    background-color: salmon;
+    color: whitesmoke;
+    padding: 5px;
+}
+
+.numero p:nth-child(4) {
+    background-color: salmon;
+    color: whitesmoke;
+    padding: 5px;
+}
+
+.numero-n p:nth-child(3n) {
+    background-color: salmon;
+    color: whitesmoke;
+    padding: 5px;
+}
+
+.numero-n-numero p:nth-child(2n + 1) {
+    background-color: salmon;
+    color: whitesmoke;
+    padding: 5px;
+}
+
+/* Pseudo elementos */
+
+.container-text{
+    background-color:  cornflowerblue;
+    padding: 10rem;
+    margin: 20px 0;
+    align-items: center;
+    text-align: center;
+}
+
+.container-text h2{
+    margin: 10px;
+    font-weight: 600;
+}
+
+.primera-linea::first-line{
+    color: lime;
+    background-color: black;
+}
+
+.antes::before{
+    content: "🍻";
+    margin-right: 10px;
+}
+
+.antes::after{
+    content: "a lucho no le gusta esto";
+    margin-left: 10px;
+    color: red;
+}
+
+.placeholdercito{
+    outline: none;
+    border: none;
+    height: 23px;
+    width: 300px;
+}
+
+.placeholdercito::placeholder{
+    background-color: black;
+    color: lime;
+    font-size: 1.5rem;
+}
+
+.toolpil span[data-descr]{
+    cursor: help;
+    text-decoration: underline;
+    color: salmon;
+    position: relative;
+}
+
+.toolpil span[data-descr]:hover::after{
+    content: attr(data-descr);
+    position: absolute;
+    background-color: #FFFFCC;
+    border: 1px solid salmon;
+    padding: 12px;
+    font-size: 0.8rem;
+    font-weight: 700;
+}

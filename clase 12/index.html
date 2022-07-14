@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psudo Clases / Elementos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-title">
+        <h1>Pseudo Clase</h1>
+    </div>
+    <!-- Hover -->
+    <div class="container-hover">
+        <h2>Hover</h2>
+        <div class="rectangulo"></div>
+        <h3>hola mundo</h3>
+    </div>
+    <div class="container-twitch">
+        <!--   Active / Link / Visited / Hover -->
+        <h2> Active / Link / Visited / Hover </h2>
+        <a href="https://www.twitch.tv/un_tucumano" target="_blank" class="twitch">Ir a twitch</a>
+    </div>
+    <div class="container-focus">
+        <h2>Focus</h2>
+        <input type="text" class="input-red" value="Yo tengo un auto rojo">
+        <input type="text" class="input-blue" value="Yo tengo un auto azul">
+    </div>
+    <!--  first children -->
+    <div class="container-first">
+        <h2>First Children</h2>
+        <div class="primerito">
+            <p>Este es el primero</p>
+            <p>Este es el segundo</p>
+            <a href="#home">Link Home</a>
+            <a href="#carrito">Link Carrito</a>
+        </div>
+    </div>
+    <!--  last children -->
+    <div class="container-last">
+        <h2>Last Children</h2>
+        <div class="ultimo">
+            <p>Este es el primero</p>
+            <p>Este es el segundo</p>
+            <p>Este es el tercero</p>
+        </div>
+    </div>
+    <!--  last children -->
+    <div class="container-nth">
+        <h2>NTH children</h2>
+        <h3>Odd - inpar </h3>
+        <div class="inpar">
+            <p>texto 1</p>
+            <p>texto 2</p>
+            <p>texto 3</p>
+            <p>texto 4</p>
+            <p>texto 5</p>
+        </div>
+
+        <h3>Even - par </h3>
+        <div class="par">
+            <p>texto 1</p>
+            <p>texto 2</p>
+            <p>texto 3</p>
+            <p>texto 4</p>
+            <p>texto 5</p>
+        </div>
+        <h3> numero </h3>
+        <div class="numero">
+            <p>texto 1</p>
+            <p>texto 2</p>
+            <p>texto 3</p>
+            <p>texto 4</p>
+            <p>texto 5</p>
+        </div>
+        <h3> Numero + n </h3>
+        <div class="numero-n">
+            <p>texto 1</p>
+            <p>texto 2</p>
+            <p>texto 3</p>
+            <p>texto 4</p>
+            <p>texto 5</p>
+            <p>texto 6</p>
+            <p>texto 7</p>
+            <p>texto 8</p>
+            <p>texto 9</p>
+        </div>
+        <h3> Numero + n + numero </h3>
+        <div class="numero-n-numero">
+            <p>texto 1</p>
+            <p>texto 2</p>
+            <p>texto 3</p>
+            <p>texto 4</p>
+            <p>texto 5</p>
+            <p>texto 6</p>
+            <p>texto 7</p>
+            <p>texto 8</p>
+            <p>texto 9</p>
+        </div>
+    </div>
+    <!-- /* Pseudo elementos */ -->
+    <div class="container-text">
+        <h2>Primera Linea</h2>
+        <p class="primera-linea">Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Error consequuntur laboriosam molestiae,
+            oluptatibus voluptate exercitationem?
+            Maiores repudiandae omnis voluptate. Quidem quo tempore
+            quia aut vero sequi libero a porro, in cumque aperiam obcaecati,
+            cupiditate suscipit consectetur rem eveniet fugiat animi.</p>
+        <h2> Antes y Despues</h2>
+        <span class="antes">Hola chicos estoy dando Clases</span>
+        <div>
+            <p class="toolpil">
+                <span data-descr="Da clases">Tucu</span>
+                Ese es mi nombre pero tambien
+                <span data-descr="🍻"> Pablo</span>
+
+            </p>
+        </div>
+        <h2>Modificando placeholder</h2>
+        <input class="placeholdercito" placeholder="escribri tu texto">
+    </div>
+</body>
+
+</html>
