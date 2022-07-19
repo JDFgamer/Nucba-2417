@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+ul{
+    list-style: none;
+    color:darkmagenta;
+    font-size: 50px;
+    font-family: sans-serif;
+    padding-bottom: 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 3s;
+}
+
+input{
+    display: none;
+}
+
+label{
+    font-size: 1.8rem;
+    margin-top: 5px;
+    margin-left: 20px;
+    transition: 0.3s ease;
+}
+
+.fa-solid{
+    cursor: pointer;
+}
+
+#toggle-nav:checked + .container{
+    height: 100vh;
+    width: 275px;
+    background: salmon;
+    z-index: 1;
+}
+
+#toggle-nav:checked + ul li{
+    transform: translate(0, 0);
+    transition: all 0.3s;
+    
+}
