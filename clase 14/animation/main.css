@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    width: 200px;
+    height: 200px;
+    margin: 200px;
+    border: 2px solid slateblue;
+}
+
+
+
+h2{
+    animation: elemento 2s ease 0s infinite alternate;
+}
+
+@keyframes elemento {
+    0%{
+        color: rgb(157, 0, 255);
+        transform: translate(-4rem, 20px) rotate(100grad) ;
+    }
+    20%{
+        transform: translate(4rem, 20px) rotate(-100grad) ;
+    }
+    80%{
+        color: salmon;
+        font-size: 500px;
+    }
+    100%{
+        transform: rotateX(10grad);
+    }
+}
